@@ -11,12 +11,12 @@ spring:
       port: 8500
     config:
       server:
-        git:
-          uri: https://github.com/zhangxd1989/spring-boot-cloud
-          search-paths: config-repo
-          default-label: consul
+        native:
+          search-locations: /Users/wangwei/code/GitHub/spring-boot-cloud/config-repo
   rabbitmq:
     host: rabbitmq
+  profiles:
+    active: native
 
 security:
   user:
