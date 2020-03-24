@@ -16,7 +16,9 @@ eureka:
 
 spring:
   datasource:
-    url: jdbc:h2:mem:user
-    driver-class-name: org.h2.Driver
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/auth-service?useUnicode=true&zeroDateTimeBehavior=convertToNull&autoReconnect=true&characterEncoding=utf-8
+    username: root
+    password: 12345678
   jpa:
     show-sql: true
